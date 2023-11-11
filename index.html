@@ -8,8 +8,8 @@
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
-  <meta name="keywords" content="Linggr Jati" />
-  <meta name="description" content="Pengadaan Barang dan Jasa" />
+  <meta name="keywords" content="Varotex" />
+  <meta name="description" content="Varotex Order" />
   <meta name="author" content="ajiahmdm" />
 
   <title>VAROTEX</title>
@@ -32,7 +32,7 @@
 <body>
       <!-- Hero section -->
 
-      <section class="about_section layout_padding" id="about">
+      <section class="about_section layout_padding">
         <div class="container">
           <div class="row">
             <div class="col-md-6">
@@ -131,7 +131,7 @@
 
   <!-- about section -->
 
-  <section class="about_section layout_padding" id="about">
+  <section class="about_section layout_padding">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -150,7 +150,7 @@
         </div>
         <div class="col-md-6">
           <div class="img-box">
-            <h3 style="background-color: ; padding: 15px;">
+            <h3 style="padding: 15px;">
               Kami menyediakan layanan :
             </h3>
             <img src="images/codsaja.png" alt="">
@@ -338,6 +338,9 @@
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js">
   </script>
+
+<!-- carousel -->
+
   <script type="text/javascript">
     $(".owl-carousel").owlCarousel({
       loop: true,
@@ -361,20 +364,7 @@
     });
   </script>
 
-  <!-- navbar -->
-  <script>
-    var nav = $("#navbarSupportedContent");
-    var btn = $(".custom_menu-btn");
-    btn.click
-    btn.click(function (e) {
-
-      e.preventDefault();
-      nav.toggleClass("lg_nav-toggle");
-      document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style")
-    });
-  </script>
-
-  <!-- corousel-->
+  <!-- corousel slide -->
   <script>
     $('.carousel').on('slid.bs.carousel', function () {
       $(".indicator-2 li").removeClass("active");
@@ -384,46 +374,6 @@
 
     })
   </script>
-
-  <!-- navbar close when click menu-->
-
-  <script>
-    
-    $('a').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top-70
-            }, 900);
-            return false;
-          }
-        }
-      });
-
-  </script>
-
-  <!-- sticky navbar -->
-
-<script>
-window.onscroll = function() {myFunction()};
-
-const navbar = document.getElementById("navbar");
-const sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
-
-  <!-- mabel kategori-->
-
-  
 
   <!-- back to top js-->
 
